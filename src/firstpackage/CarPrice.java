@@ -7,7 +7,7 @@ public class CarPrice {
         MSRP = scanner.nextInt();
         int discount = scanner.nextInt();
         int months = scanner.nextInt();
-        double monthlyPayment = (MSRP*((100-discount)/100))/months;
+        double monthlyPayment = (MSRP*((float)(100-discount)/100))/months;
         System.out.println("Monthly Payment is : "+monthlyPayment);
 
     }
